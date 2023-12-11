@@ -21,6 +21,13 @@ img {
     max-width: 100%;
 }
 
+.container {
+    width: 1158;
+    padding-left: 15;
+    padding-right: 15;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 .visually-hidden {
     position: absolute;
@@ -126,17 +133,11 @@ font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
-width: 496px;
+max-width: 496px;
 margin: 0 auto 48px;
 }
 
-.container {
-width: 1158;
-padding-left: 15;
-padding-right: 15;
-margin-left: auto;
-margin-right: auto;
-}
+
 
 .main {
     background: #2E2F42;
@@ -172,7 +173,8 @@ margin-right: auto;
 .page-list {
     display: flex;
     gap: 24px;
-    padding: 120px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
    justify-content: center;
 }
 .page-item {
@@ -224,7 +226,7 @@ background-color: #FFF;
 min-width: 264px;
 width: calc((100% - 72px) / 4);
 border-radius: 0px 0px 4px 4px;
-display: inline-flex;
+display:block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -258,12 +260,14 @@ width: calc((100% - 48px) / 3);
     column-gap: 24px;
     row-gap: 48px;
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 .portfolio {
     border: 1px solid #E7E9FC;
     border-top: none;
         background: #FFF;
         padding: 32px 16px;
+        text-align: center;
 }
 
 
@@ -290,7 +294,7 @@ margin-bottom: 72px;
     background-color: #2E2F42;
     padding: 100px 0;
 }
-.logo { margin-right:  0;
+.logo {
 margin-bottom: 16px;
 display: inline-block;
 }
