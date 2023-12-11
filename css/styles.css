@@ -8,7 +8,60 @@ a { color: currentColor;
      text-decoration: none;
 }
 
-ul,li { list-style-type :none;}
+ul,li {
+     list-style-type :none;
+    margin: 0;
+    padding: 0;
+    }
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.header {border-bottom: 1px solid #E7E9FC;}
+
+.header-container {
+    display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.header-nav  {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.address {
+    display: flex;
+    gap: 40px;
+}
 
 
 
@@ -20,7 +73,10 @@ color: #4D5AE5;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
+
 }
+
 
 .logo-dark {
     color: #2E2F42;
@@ -33,6 +89,7 @@ color: #4D5AE5;
 }
 
 .header-link {
+    
     color:#2E2F42 ;
     font-style: normal;
     font-size: 16px;
@@ -40,6 +97,8 @@ color: #4D5AE5;
     line-height: 1.5;
 
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
 }
 .header-link:hover ,
 .header-link:focus{ color:#404BBF;}
@@ -67,9 +126,24 @@ font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
-
+width: 496px;
+margin: 0 auto 48px;
 }
-.main {background: #2E2F42;}
+
+.container {
+width: 1158;
+padding-left: 15;
+padding-right: 15;
+margin-left: auto;
+margin-right: auto;
+}
+
+.main {
+    background: #2E2F42;
+    padding: 188px 0;
+    text-align: center;
+}
+ 
 
 .main-button {
     color: #FFF;
@@ -78,6 +152,13 @@ letter-spacing: 0.02em;
     line-height: 1.5;
     letter-spacing: 0.04em;
     background: #4D5AE5;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    padding: 16px 32px;
+    
 }
 .main-button:hover,
 .main-button:focus {background: #404BBF;
@@ -85,7 +166,23 @@ letter-spacing: 0.02em;
 }
 .page {
     font-style: normal;
+    display: flex;
+    gap: 24px;
 }
+.page-list {
+    display: flex;
+    gap: 24px;
+    padding: 120px 0;
+   justify-content: center;
+}
+.page-item {
+width: 264px;
+}
+.title {
+    margin-bottom: 8px;
+}
+
+
 .title ,
 .section-list ,
 .hero-list
@@ -96,6 +193,7 @@ letter-spacing: 0.02em;
     font-weight: 500;
     line-height:1.2;
     letter-spacing:0.02em;
+    margin-bottom: 8px;
 }
 .text ,
 .hero-text ,
@@ -108,20 +206,65 @@ letter-spacing: 0.02em;
     letter-spacing: 0.02em;
 }
 
-.section  {
+.section-2  {
     background-color: #F4F4FD ;
     font-style: normal;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
+.section-job{
+    display: flex;
+    gap: 24px;
+
+}
+
 
 .section-item {
 background-color: #FFF;
+min-width: 264px;
+width: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;
+display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+display: inline-flex;
+    padding-bottom: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+
 }
+.section-visual {
+    display: flex;
+        width: 232px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+}
+
+
 .hero-item {
 font-style: normal;
 background-color: #FFF;
+width: calc((100% - 48px) / 3);
 }
+.hero {
 
-
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    padding-bottom: 120px;
+}
+.portfolio {
+    border: 1px solid #E7E9FC;
+    border-top: none;
+        background: #FFF;
+        padding: 32px 16px;
+}
 
 
 
@@ -137,6 +280,7 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom: 72px;
 }
 
 
@@ -144,6 +288,11 @@ text-transform: capitalize;
 
 .footer {
     background-color: #2E2F42;
+    padding: 100px 0;
+}
+.logo { margin-right:  0;
+margin-bottom: 16px;
+display: inline-block;
 }
 .logo-light {
     color: #F4F4FD;
@@ -155,6 +304,7 @@ text-transform: capitalize;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 
